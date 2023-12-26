@@ -67,5 +67,5 @@ RENAME COLUMN C_Name TO Course_Name;
 ALTER TABLE Course_Grades
 ALTER COLUMN Grade VARCHAR(2);
 
-ALTER TABLE Course
-DROP COLUMN Websites;
+DELETE FROM Course
+WHERE C_Name = 'Websites';
